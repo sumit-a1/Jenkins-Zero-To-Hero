@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'sumitjha1/maven-sumit-docker-agent:v1'
+      image 'sumitjha1/ultimate-cicd-pipeline:v1'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
